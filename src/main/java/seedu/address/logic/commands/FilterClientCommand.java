@@ -1,5 +1,16 @@
 package seedu.address.logic.commands;
 
+/*
+ * Bug: The `FilterClient` function is intended to filter client records based on specific criteria,
+ * allowing for more precise querying of client data. The 'n/a n/a' parameters are placeholders
+ * that indicate an absence of certain criteria and the command should fail when there are duplicate
+ * prefixes (in this case n/)
+ *
+ * Potential Solution:
+ * - Document `FilterClient` behavior with placeholder parameters ('n/a n/a') and clarify
+ *   the expected output when these wildcards are used.
+ */
+
 import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
 
