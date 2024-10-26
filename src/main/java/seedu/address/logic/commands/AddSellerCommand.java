@@ -10,6 +10,23 @@ import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
 import seedu.address.model.client.Seller;
 
+/*
+ * Bug: Inconsistent Field Spacing and Command Ordering
+ *
+ * Description:
+ * This file has inconsistent spacing between fields, which affects readability
+ * and may lead to formatting issues across different parts of the codebase.
+ * Additionally, there is uncertainty regarding whether the ordering of commands
+ * impacts functionality. If the commands are expected to follow a specific
+ * sequence, inconsistent ordering could lead to unexpected behaviors or errors.
+ *
+ * Potential Solution:
+ * - Standardize spacing between fields to ensure uniform readability.
+ * - Clarify if command ordering is significant; if so, enforce a strict order.
+ * - Consider adding comments or documentation to clarify expected field spacing
+ *   and command order to prevent future inconsistencies.
+ */
+
 /**
  * Adds a {@code Seller} to the address book.
  * Extends {@link AddClientCommand} and uses its functionality to add a specific type of client: {@code Seller}.
