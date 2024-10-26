@@ -1,5 +1,32 @@
 package seedu.address.logic.commands;
 
+/*
+ * Bug: Incorrect Error Message Displayed in FilterProperty Class
+ *
+ * Description:
+ * In the `FilterProperty` class, the command `filterproperty t/hdb gte/10000 lte/50000 p/a`
+ * incorrectly displays an error message that does not accurately reflect the issue. This command
+ * is intended to filter properties with type `hdb`, a price range between 10,000 and 50,000,
+ * and a specific availability parameter. However, the error message shown may suggest a problem
+ * with the input format or values, even when they are correct.
+ *
+ * Expected Behavior:
+ * - The command should provide a clear and accurate error message only if:
+ *   - The input format is incorrect.
+ *   - The provided values do not fall within the acceptable range.
+ * - If the command inputs are valid, the `FilterProperty` class should proceed to execute the
+ *   filtering without displaying an error.
+ *
+ * Potential Solution:
+ * - Review the validation logic in the `FilterProperty` class to ensure that error messages
+ *   are displayed only when actual input issues are detected.
+ * - Refine error messaging to clearly indicate what is incorrect, such as format, type, or range,
+ *   to avoid confusion for valid commands.
+ * - Add unit tests for `FilterProperty` to cover edge cases, ensuring that correct inputs do not
+ *   trigger incorrect error messages.
+ */
+
+
 import static seedu.address.logic.parser.CliSyntax.PREFIX_GTE;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_LTE;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_TYPE;
