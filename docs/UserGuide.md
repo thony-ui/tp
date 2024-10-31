@@ -257,9 +257,9 @@ Format: `addmeeting mt/MEETING_TITLE d/MEETING_DATE bp/BUYER_PHONE_NUMBER sp/SEL
 * `POSTALCODE` refers to a postal code. The postal code must belong to some property to the property book.
 
 Examples:
-* `addmeeting mt/Meeting 1 d/01-01-2024 b/Alice Pauline s/Daniel Meier t/HDB c/123456` adds a meeting with meeting title `Meeting 1` and meeting date `01-01-2024`.
+* `addmeeting mt/Meeting 1 d/01-01-2024 bp/94351253 sp/87652533 t/HDB c/123456` adds a meeting with meeting title `Meeting 1`, meeting date `01-01-2024`, buyer's phone number `94351253`, seller's phone number `87652533`, type of property `HDB` and postal code `321456`.
 
-  ![result for 'addmeeting mt/Meeting 1 d/01-01-2024 b/Alice Pauline s/Daniel Meier t/HDB c/123456'](images/addmeeting.png)
+  ![result for 'addmeeting mt/Meeting 2 d/01-01-2024 bp/94351253 sp/87652533 t/HDB c/123456'](images/addmeeting.png)
 
 ### Deleting a meeting : `deletemeeting`
 
